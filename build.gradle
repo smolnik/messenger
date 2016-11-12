@@ -1,0 +1,13 @@
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+        'javax:javaee-api:7.0',
+        'com.amazonaws:aws-java-sdk-sns:1.11.49'
+     )
+}
+
