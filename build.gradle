@@ -11,3 +11,6 @@ dependencies {
      )
 }
 
+war {
+    archiveName = 'mm.war'
+}
