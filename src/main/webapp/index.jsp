@@ -21,10 +21,10 @@
 	<br> Who am I? Take a look at:
 	<br>
 	<div id="info" class="border">
-		<%="date: " + new Date()%>
+		<%="Date and time: " + new Date()%>
 	</div>
 	<div id="info" class="border">
-		<%="client IP: " + request.getRemoteAddr()%>
+		<%="Client IP: " + request.getRemoteAddr()%>
 	</div>
 
 	<br>
