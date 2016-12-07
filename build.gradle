@@ -26,4 +26,13 @@ task copyArtifacts(type: Copy) {
 
 }
 
-build.dependsOn copyArtifacts
+task zip(type: Zip) {
+   from 'build/artifacts'
+   include '*'
+   include '*/*'
+   archiveName 'mm.zip'
+   destinationDir(file('/'))
+}
+
+zip.dependsOn copyArtifacts
+build.dependsOn zip
