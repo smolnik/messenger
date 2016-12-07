@@ -26,6 +26,6 @@ task collectArtifacts(type: Copy) {
 
 }
 
-collectArtifacts.dependsOn {
-    war
+build.dependsOn {
+    collectArtifacts
 }
