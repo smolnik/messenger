@@ -14,3 +14,18 @@ dependencies {
 war {
     archiveName = 'mm.war'
 }
+
+task collectArtifacts(type: Copy) {
+    from 'appspec.yml'
+    from 'build/libs/mm.war'
+    into 'build/artifacts'
+
+    into ('scripts'){
+        from 'scripts'
+    }
+
+}
+
+collectArtifacts.dependsOn {
+    war
+}
