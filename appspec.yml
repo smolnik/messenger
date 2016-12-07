@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /mm.war
+  - source: /build/libs/mm.war
     destination: /var/lib/tomcat8/webapps/
 hooks:
   ApplicationStop:
