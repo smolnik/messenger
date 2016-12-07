@@ -31,7 +31,7 @@ task zip(type: Zip) {
    include '*'
    include '*/*'
    archiveName 'mm.zip'
-   destinationDir(file('/'))
+   destinationDir(file('.'))
 }
 
 zip.dependsOn copyArtifacts
