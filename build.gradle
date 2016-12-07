@@ -15,7 +15,7 @@ war {
     archiveName = 'mm.war'
 }
 
-task collectArtifacts(type: Copy) {
+task copyArtifacts(type: Copy) {
     from 'appspec.yml'
     from 'build/libs/mm.war'
     into 'build/artifacts'
@@ -26,6 +26,4 @@ task collectArtifacts(type: Copy) {
 
 }
 
-build.dependsOn {
-    collectArtifacts
-}
+build.dependsOn copyArtifacts
