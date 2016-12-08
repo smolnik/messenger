@@ -14,25 +14,3 @@ dependencies {
 war {
     archiveName = 'mm.war'
 }
-
-task copyArtifacts(type: Copy) {
-    from 'appspec.yml'
-    from 'build/libs/mm.war'
-    into 'build/artifacts'
-
-    into ('scripts'){
-        from 'scripts'
-    }
-
-}
-
-task zip(type: Zip) {
-   from 'build/artifacts'
-   include '*'
-   include '*/*'
-   archiveName 'mm.zip'
-   destinationDir(file('.'))
-}
-
-zip.dependsOn copyArtifacts
-build.dependsOn zip
