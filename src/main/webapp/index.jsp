@@ -37,7 +37,7 @@
 				String status = (String) request.getAttribute("status");
 				if (status != null) {
 			%>
-			<br>Response status:&nbsp;<b><%=status%></b>%>
+			<br>Status returned:&nbsp;<b><%=status%></b>%>
 			<%
 				}
 			%>
