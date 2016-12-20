@@ -18,7 +18,7 @@
 	%>
 	Hello!&nbsp;<%=name == null ? "Anonymous" : name%>
 	<br>
-	<br> Who am I? Take a look at:
+	<br> Who am I? Please, take a look at:
 	<br>
 	<div id="info" class="border">
 		<%="Date and time: " + new Date()%>
