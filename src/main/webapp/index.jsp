@@ -31,7 +31,7 @@
 	<form action="send" method="POST">
 
 		<div>
-			Type&nbsp;message or two:&nbsp;<input name="url" type="text" size="80">&nbsp;<input
+			Type&nbsp;message or two :)&nbsp;<input name="url" type="text" size="80">&nbsp;<input
 				type="submit" value="Send message" size="30"> <br>
 			<%
 				String status = (String) request.getAttribute("status");
