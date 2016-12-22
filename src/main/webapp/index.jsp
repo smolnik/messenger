@@ -8,7 +8,7 @@
 	httpResponse.setDateHeader("Expires", 0); // Proxies.
 %>
 <head>
-<title>Messenger :))</title>
+<title>Messenger (:</title>
 <link rel="stylesheet" type="text/css" href="simple.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
@@ -31,7 +31,7 @@
 	<form action="send" method="POST">
 
 		<div>
-			Type&nbsp;message:&nbsp;<input name="url" type="text" size="80">&nbsp;<input
+			Type&nbsp;message or two:&nbsp;<input name="url" type="text" size="80">&nbsp;<input
 				type="submit" value="Send message" size="30"> <br>
 			<%
 				String status = (String) request.getAttribute("status");
