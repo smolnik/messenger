@@ -1,5 +1,7 @@
 apply plugin: 'war'
 
+logging.captureStandardOutput LogLevel.DEBUG
+
 repositories {
     mavenCentral()
 }
