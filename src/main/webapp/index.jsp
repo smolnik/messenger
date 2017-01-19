@@ -8,7 +8,7 @@
 	httpResponse.setDateHeader("Expires", 0); // Proxies.
 %>
 <head>
-<title>Messenger (:</title>
+<title>The Best Messenger (:</title>
 <link rel="stylesheet" type="text/css" href="simple.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
