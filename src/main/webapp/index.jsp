@@ -8,7 +8,7 @@
 	httpResponse.setDateHeader("Expires", 0); // Proxies.
 %>
 <head>
-<title>Messenger :)</title>
+<title>Super Messenger :)</title>
 <link rel="stylesheet" type="text/css" href="simple.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
@@ -16,7 +16,7 @@
 	<%
 		String name = request.getParameter("name");
 	%>
-	Hello!&nbsp;<%=name == null ? "Anonymous" : name%>
+	Hello Adam!&nbsp;<%=name == null ? "Anonymous" : name%>
 	<br>
 	<br> Who am I? Please, take a look at:
 	<br>
