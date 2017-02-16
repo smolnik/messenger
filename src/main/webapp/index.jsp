@@ -3,9 +3,9 @@
 <html>
 <%
 	HttpServletResponse httpResponse = (HttpServletResponse) response;
-	httpResponse.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1
-	httpResponse.setHeader("Pragma", "no-cache"); // HTTP 1.0
-	httpResponse.setDateHeader("Expires", 0); // Proxies.
+	httpResponse.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+	httpResponse.setHeader("Pragma", "no-cache");
+	httpResponse.setDateHeader("Expires", 0);
 %>
 <head>
 <title>Messenger :)</title>
@@ -16,7 +16,7 @@
 	<%
 		String name = request.getParameter("name");
 	%>
-	Hello!&nbsp;<%=name == null ? "Anonymous" : name%>
+	Hey!&nbsp;<%=name == null ? "Anonymous" : name%>
 	<br>
 	<br> Who am I? Take a look at:
 	<br>
