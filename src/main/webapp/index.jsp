@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-	Hey Friend!
+	Hello my Friend!
 	<br>
 	<br> Who am I? I am Messenger. Take a look at:
 	<br>
