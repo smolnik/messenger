@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - gradle build war
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - build/libs/mm.war
+    - deploy/*
+    - appspec.yml
+discard-paths: true
