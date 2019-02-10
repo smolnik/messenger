@@ -5,13 +5,13 @@ files:
     destination: /var/lib/tomcat/webapps/
 hooks:
   ApplicationStop:
-    - location: deploy/stop_application
+    - location: stop_application
       timeout: 300
   BeforeInstall:
-    - location: deploy/install_dependencies
+    - location: install_dependencies
       timeout: 300
   ApplicationStart:
-    - location: deploy/start_application
+    - location: start_application
       timeout: 300
   ValidateService:
-    - location: deploy/basic_health_check.sh
+    - location: basic_health_check.sh

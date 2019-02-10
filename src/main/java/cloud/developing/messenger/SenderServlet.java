@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @author asmolnik
  */
-@WebServlet({"/"})
+@WebServlet({"/send"})
 public class SenderServlet extends HttpServlet {
 
     private static final long serialVersionUID = 5453258143334L;
