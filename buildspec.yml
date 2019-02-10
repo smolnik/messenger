@@ -12,4 +12,4 @@ artifacts:
     - build/libs/mm.war
     - deploy/*
     - appspec.yml
-discard-paths: true
+  discard-paths: true
