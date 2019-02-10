@@ -38,7 +38,7 @@ Hey!&nbsp;<%=name == null ? "Anonymous" : name%>
             if (status != null) {
         %>
         <br>Status:&nbsp;<b><%=status%>
-    </b>%>
+    </b>
         <%
             }
         %>
