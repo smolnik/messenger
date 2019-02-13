@@ -21,7 +21,8 @@ public class SenderServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        request.setAttribute("status", "OK");
+        request.setAttribute("status", request.getParameter("url");
+/*        request.setAttribute("status", "OK");*/
         request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }
