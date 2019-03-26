@@ -14,3 +14,23 @@ dependencies {
 war {
     archiveName = 'mm.war'
 }
+
+task zip(type: Zip) {
+   
+   dependsOn war 
+   
+   from ('deploy') {
+     include '*'
+   }
+
+   from ('build/libs') {
+     include 'mm.war'
+   }
+   
+   from ('.') {
+     include 'appspec.yml'
+   }
+ 
+   archiveName 'mm.zip'
+   destinationDir(file('.'))
+}
