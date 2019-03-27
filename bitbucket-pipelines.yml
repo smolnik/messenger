@@ -14,13 +14,20 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: 'eu-central-1'
               APPLICATION_NAME: 'mws-app-dev'
+              COMMAND: 'upload'
+              ZIP_FILE: 'mm.zip'
+              S3_BUCKET: $CI_CD_BUCKET_DEV
+              DEBUG: 'true'
+          - pipe: atlassian/aws-code-deploy:0.2.1
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: 'eu-central-1'
+              APPLICATION_NAME: 'mws-app-dev'
+              DEPLOYMENT_GROUP: 'mws-dg-dev'
               COMMAND: 'deploy'
               ZIP_FILE: 'mm.zip'
-              DEPLOYMENT_GROUP: 'mws-dg-dev'
               FILE_EXISTS_BEHAVIOR: 'OVERWRITE'
-              WAIT: 'true'
               S3_BUCKET: $CI_CD_BUCKET_DEV
-              VERSION_LABEL: '1.0.0'
-              #DEBUG: 'true'
-              # EXTRA_ARGS: '<string>' # Optional.
-              # IGNORE_APPLICATION_STOP_FAILURES: '<boolean>' # Optional.              
+              DEBUG: 'true'
+              

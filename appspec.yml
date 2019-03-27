@@ -14,4 +14,4 @@ hooks:
     - location: start_application
       timeout: 300
   ValidateService:
-    - location: basic_health_check.sh
+    - location: basic_health_check
